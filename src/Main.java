@@ -1,6 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        Overloading.calcFeetAndInchesToCentimetres(100);
+        SecondsAndMinutes.getDurationString(65,45);
+        SecondsAndMinutes.getDurationString(3945);
     }
 }
