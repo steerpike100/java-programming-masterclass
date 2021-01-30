@@ -13,15 +13,14 @@ public class SecondsAndMinutes {
         }
     }
 
-    public static boolean getDurationString(int seconds){
+    public static void getDurationString(int seconds){
         if(seconds <=0){
             System.out.println("Invalid number of seconds");
-            return false;
         }else{
             int minutes = seconds / 60;
             int remainingSeconds = seconds % 60;
 
-            return getDurationString(minutes, remainingSeconds);
+            getDurationString(minutes, remainingSeconds);
         }
     }
 }
