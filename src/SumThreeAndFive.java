@@ -9,11 +9,11 @@ public class SumThreeAndFive {
             if ((i % 3 == 0) && (i % 5 == 0)) {
                 count++;
                 sum += i;
-                System.out.println(i);
+                System.out.println("Found number = " + i);
 
             }
 
-            if (count >= 5) {
+            if (count == 5) {
                 System.out.println(sum);
                 break;
             }
