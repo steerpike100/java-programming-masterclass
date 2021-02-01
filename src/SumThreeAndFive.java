@@ -14,9 +14,9 @@ public class SumThreeAndFive {
             }
 
             if (count == 5) {
-                System.out.println(sum);
                 break;
             }
         }
+        System.out.println("Sum = " + sum);
     }
 }
