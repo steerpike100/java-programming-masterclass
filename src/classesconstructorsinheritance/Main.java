@@ -3,36 +3,21 @@ package classesconstructorsinheritance;
 public class Main {
 
     public static void main(String[] args) {
-//        Account account = new Account();//(12345, 150, "Giles Pip", "giles@pip.com", "01249720126");
-//
-//        System.out.println("The account number is: " + account.getAccountNumber());
-//        System.out.println("The balance is: " + account.getBalance());
-//        System.out.println("The account name is: " + account.getName());
-//        System.out.println("The email address is: " + account.getEmail());
-//        System.out.println("The phone number is: " + account.getPhoneNumber());
-//
-//        account.withdraw(100);
-//        account.deposit(10);
-//        account.withdraw(70);
-//
-//        Account timsAccount = new Account("Tim", "tin@email.com", "01249720126");
-//        System.out.println(timsAccount.getAccountNumber() + " name " + timsAccount.getName());
+        Dimensions dimensions = new Dimensions(20,20,5);
+        Case theCase = new Case("220B", "Dell", "240",dimensions);
 
-        VipCustomer vipCustomer = new VipCustomer();
-        System.out.println("The VIP name number is: " + vipCustomer.getName());
-        System.out.println("The VIP credit limit is: " + vipCustomer.getCreditLimit());
-        System.out.println("The VIP email is: " + vipCustomer.getEmailAddress());
+        Monitor theMonitor = new Monitor("27 inch beast", "Acer", 27, new Resolution(2540,1440));
 
-        VipCustomer vip2 = new VipCustomer("steve2", 200.00);
-        System.out.println("The VIP name number is: " + vip2.getName());
-        System.out.println("The VIP credit limit is: " + vip2.getCreditLimit());
-        System.out.println("The VIP email is: " + vip2.getEmailAddress());
+        Motherboard theMotherboard =  new Motherboard("BJ-200","Asus",4,6,"v2.44");
 
-        VipCustomer vip3 = new VipCustomer("steve3", 300.00, "steve3@gmail.com");
-        System.out.println("The VIP name number is: " + vip3.getName());
-        System.out.println("The VIP credit limit is: " + vip3.getCreditLimit());
-        System.out.println("The VIP email is: " + vip3.getEmailAddress());
+        PC thePc = new PC(theCase,theMonitor,theMotherboard);
 
+        thePc.getMonitor().drawPixelAt(3,4,"red");
+        thePc.getMotherboard().loadProgram("Windows 1.0");
+        thePc.getTheCase().pressPowerButton();
+
+        Office.OfficeBuilder myOffice = new Office("hello", 6, "blah");
+        myOffice = new Office.OfficeBuilder().something("ssw");
 
     }
 }
