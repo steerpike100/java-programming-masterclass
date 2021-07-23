@@ -33,13 +33,6 @@ public class InstantiateObjects {
         System.out.println("The VIP credit limit is: " + vip3.getCreditLimit());
         System.out.println("The VIP email is: " + vip3.getEmailAddress());
 
-        Wall wall = new Wall(5, 4);
-        System.out.println("area= " + wall.getArea());
-
-        wall.setHeight(-1.25);
-        System.out.println("width= " + wall.getWidth());
-        System.out.println("height= " + wall.getHeight());
-        System.out.println("area= " + wall.getArea());
 
         Carpet carpet = new Carpet(3.5);
         Floor floor = new Floor(2.75, 4.0);
